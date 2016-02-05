@@ -31,3 +31,8 @@
 	app.init();
 
 })();
+
+
+//Comments Tijs Luitse
+//IFEE is goed gestructureerd
+//Bij de toggle gebruikt maken van een class toevoegen/verwijderen, nu onnodig veel code
