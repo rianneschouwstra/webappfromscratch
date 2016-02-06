@@ -36,10 +36,14 @@ section{
 	background: rgba(255, 255, 255, 0.14);
 }
 
-#start{
+/*#start{
 	display:block;
 }
 
 #best{
 	display:none;
+}*/
+
+.active{
+	display:block;
 }

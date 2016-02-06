@@ -3,14 +3,19 @@
 
 	var app = {
 		init: function(){
+
+			// start routes
 			routes.init();
 		}
 	};
 
 	var routes = {
 		init: function(){
+			
 			window.addEventListener('hashchange', function(hashObj) {
 				var hash = hashObj.newURL.split('#')[1];
+
+				// call sections.toggle
 				sections.toggle(hash);
 			}, false); // prevents default function (off)
 		}
@@ -18,16 +23,21 @@
 
 	var sections = {
 		toggle: function(route){
+
+			var startDisplay = document.getElementById('start');
+			var bestDisplay = document.getElementById('best)');
+
 			if (route === 'start'){
-				document.getElementById('start').style.display='block';
-				document.getElementById('best').style.display='none';
+				startDisplay.classList.add('active');
+				bestDisplay.classList.remove('active');
 			} else {
-				document.getElementById('start').style.display='none';
-				document.getElementById('best').style.display='block';
+				startDisplay.classList.remove('active');
+				bestDisplay.classList.add('active');
 			}
 		}
 	};
 
+	// start app
 	app.init();
 
 })();
