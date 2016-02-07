@@ -1,6 +1,9 @@
 (function(){
 	'use strict'
 
+	var startDisplay = document.getElementById('start');
+	var bestDisplay = document.getElementById('best');
+
 	var app = {
 		init: function(){
 
@@ -11,6 +14,9 @@
 
 	var routes = {
 		init: function(){
+
+			// use start as default to show
+			window.location.hash = 'start';
 			
 			window.addEventListener('hashchange', function(hashObj) {
 				var hash = hashObj.newURL.split('#')[1];
@@ -23,9 +29,6 @@
 
 	var sections = {
 		toggle: function(route){
-
-			var startDisplay = document.getElementById('start');
-			var bestDisplay = document.getElementById('best)');
 
 			if (route === 'start'){
 				startDisplay.classList.add('active');
