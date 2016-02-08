@@ -33,14 +33,16 @@
 
 			var template = document.getElementById('weatherUtrecht');
 
-			microAjax('http://api.openweathermap.org/data/2.5/weather?q=Utrecht&units=metric&appid=44db6a862fba0b067b1930da0d769e98', function(data){
+			microAjax('http://api.openweathermap.org/data/2.5/weather?id=2745912&units=metric&appid=44db6a862fba0b067b1930da0d769e98', function(data){
 				data = JSON.parse(data);
 
 				console.log(data);
 
 				var templateData = {
 					city: data.name,
-					temp: data.main.temp
+					temp: data.main.temp,
+					windSpeed: data.wind.speed,
+					weatherType: data.weather[0].description
 				}
 
 				console.log(templateData);
