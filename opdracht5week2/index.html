@@ -10,23 +10,25 @@
 	<nav>
 		<a href="#start">Start</a>
 		<a href="#weatherUtrecht">Weather Utrecht</a>
+		<a href="#weatherAmsterdam">Weather Amsterdam</a>
+		<a href="#weatherDeventer">Weather Deventer</a>
 	</nav>
 
 	<main>
 		<section id="start">
-			<p>section start</p>
+			<p>This is your starting point. Please select a city</p>
 		</section>
 
-		<section id="weatherUtrecht">
-			<p>City: <span data-bind="city"></span></p>
+		<section id="weatherCity">
+			<p>City: <span data-bind="city" data-bind="country"></span>, <span data-bind="country"></span></p>
 			<p>Temperature: <span data-bind="temp"> </span> &#x2103</p>
-			<p>Weathertype: <span data-bind="weatherType"> </span></p>
-			<p>Windspeed <span data-bind="windSpeed"></span></p>
-			
+			<p><img id="weather-icon" src="" alt=""> <span data-bind="weatherType"> </span></p>
+			<p>Windspeed: <span data-bind="windSpeed"></span> m/s</p>
+
 		</section>
+
 	</main>
 		
-	
 	<script src="static/transparancy.js"></script>
 	<script src="static/routie.min.js"></script>
 	<script src="static/microajax.minified.js"></script>
