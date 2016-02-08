@@ -1,5 +1,5 @@
 (function(){
-	'use strict'
+	'use strict'//Makes sure you can only use declared variables in your code. If you use undeclared variables your code might crash.
 
 	var startDisplay = document.getElementById('start');
 	var bestDisplay = document.getElementById('best');
