@@ -1,5 +1,5 @@
 // Source: Rover van Nispen: https://github.com/rovervannispen/Everything-Web-Minor/blob/gh-pages/web-app-from-scratch/assignments/opdracht%205/static/js/app.js
-// Source: Sem Bakkum: 
+// Source: Sem Bakkum (sections.toggle - for)
 
 (function(){
 	'use strict'
@@ -58,7 +58,7 @@
 			var toggleSection = document.getElementById(route);
 
 			console.log(allSections);
-
+			// Source For Loop Sem Bakkum: https://github.com/SemBakkum/SemBakkum.github.io/tree/master/WAFS/Week%201/Exercise%205
 			for (var c = 0; c < allSections.length; c++) {
 				allSections[c].classList.remove('active');
 			}
